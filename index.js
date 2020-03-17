@@ -73,7 +73,46 @@ function sayHello() {
 sayHello();
 sayHello("Nicolas");
 */
+/*
 function sayHello(name, age) {
   console.log("Hello!", name, "you have", age, "years of age.");
 }
 sayHello("Nicolas", "15");
+console.log(console);
+*/
+/*
+function sayHello(name, age) {
+  console.log(`Hello ${name} you are ${age} years old.`);
+}
+sayHello("Nicolas", 15);
+*/
+/*
+function sayHello(name, age) {
+  console.log(`Hello ${name} you are ${age} years old.`);
+}
+const greetNicolas = sayHello("Nicolas", 14);
+
+console.log(greetNicolas);
+*/
+/*
+function sayHello(name, age) {
+  return `Hello ${name} you are ${age} years old.`;
+}
+const greetNicolas = sayHello("Nicolas", 14);
+
+console.log(greetNicolas);
+*/
+
+const calculater = {
+  plus: function(a, b) {
+    return a + b;
+  },
+  minus: function(a, b) {
+    return a - b;
+  }
+};
+
+const plus = calculater.plus(5, 5);
+const minus = calculater.minus(5, 5);
+
+console.log(plus, minus);
