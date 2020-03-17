@@ -102,7 +102,7 @@ const greetNicolas = sayHello("Nicolas", 14);
 
 console.log(greetNicolas);
 */
-
+/*
 const calculater = {
   plus: function(a, b) {
     return a + b;
@@ -116,3 +116,13 @@ const plus = calculater.plus(5, 5);
 const minus = calculater.minus(5, 5);
 
 console.log(plus, minus);
+*/
+/*
+const title = document.getElementById("title");
+
+console.log(title);
+
+console.error("Fuck");
+*/
+const title = document.getElementById("title");
+title.innerHTML = "Hi! From JS";
