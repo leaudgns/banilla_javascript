@@ -188,6 +188,7 @@ if (20 > 5 || "nicolas" === "nicolas") {
 }
 */
 // prompt("ask something");
+/*
 const age = prompt("How old are you");
 if (age >= 18 && age <= 21) {
   console.log("you can drink but you should not");
@@ -196,3 +197,50 @@ if (age >= 18 && age <= 21) {
 } else {
   console.log("too young");
 }
+*/
+/*
+const title = document.querySelector("#title");
+
+const BASE_COLOR = "rgb(52, 73, 94)";
+
+function handleClick() {
+  console.log(title.style.color);
+}
+
+function init() {
+  title.style.color = BASE_COLOR;
+  title.addEventListener("click", handleClick);
+}
+init();
+*/
+const title = document.querySelector("#title");
+
+const BASE_COLOR = "rgb(52, 73, 94)";
+const OTHER_COLOR = "#7f8c8d";
+
+function handleClick() {
+  const currentColor = title.style.color;
+  if (currentColor === BASE_COLOR) {
+    title.style.color = OTHER_COLOR;
+  } else {
+    title.style.color = BASE_COLOR;
+  }
+}
+
+function init() {
+  title.style.color = BASE_COLOR;
+  title.addEventListener(/*"mouseenter"*/ "click", handleClick);
+}
+init();
+/*
+function handOnline() {
+  console.log("Bye bye");
+}
+
+function handleOffline() {
+  console.log("Welcome back");
+}
+
+window.addEventListener("offline", handleOffline);
+window.addEventListener("online", handOnline);
+*/
