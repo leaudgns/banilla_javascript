@@ -148,6 +148,7 @@ function handleResize(event) {
 
 window.addEventListener("resize", handleResize);
 */
+/*
 const title = document.querySelector("#title");
 
 function handleClick() {
@@ -155,3 +156,43 @@ function handleClick() {
 }
 
 title.addEventListener("click", handleClick);
+*/
+
+/*if (10 === 5) {
+  console.log("hi");
+} else {
+  console.log("ho");
+}
+*/
+/*
+if ("nicolas" === "necolas") {
+  console.log("hi");
+} else {
+  console.log("ho");
+}
+*/
+/*
+if ("10" === 10) {
+  console.log("hi");
+} else if ("10" === "10") {
+  console.log("lalala");
+} else {
+  console.log("ho");
+}
+*/
+/*
+if (20 > 5 || "nicolas" === "nicolas") {
+  console.log("yes");
+} else {
+  console.log("no");
+}
+*/
+// prompt("ask something");
+const age = prompt("How old are you");
+if (age >= 18 && age <= 21) {
+  console.log("you can drink but you should not");
+} else if (age > 21) {
+  console.log("go ahead");
+} else {
+  console.log("too young");
+}
