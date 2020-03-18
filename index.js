@@ -213,6 +213,19 @@ function init() {
 }
 init();
 */
+/*
+function handOnline() {
+  console.log("Bye bye");
+}
+
+function handleOffline() {
+  console.log("Welcome back");
+}
+
+window.addEventListener("offline", handleOffline);
+window.addEventListener("online", handOnline);
+*/
+/*
 const title = document.querySelector("#title");
 
 const BASE_COLOR = "rgb(52, 73, 94)";
@@ -229,18 +242,57 @@ function handleClick() {
 
 function init() {
   title.style.color = BASE_COLOR;
-  title.addEventListener(/*"mouseenter"*/ "click", handleClick);
+  title.addEventListener(/*"mouseenter" "click", handleClick);
 }
 init();
-/*
-function handOnline() {
-  console.log("Bye bye");
-}
-
-function handleOffline() {
-  console.log("Welcome back");
-}
-
-window.addEventListener("offline", handleOffline);
-window.addEventListener("online", handOnline);
 */
+/*
+const title = document.querySelector("#title");
+
+const CLICKED_CLASS = "clicked";
+
+function handleClick() {
+  const currentClass = title.className;
+  if (currentClass !== CLICKED_CLASS) {
+    title.className = CLICKED_CLASS;
+  } else {
+    title.className = "";
+  }
+}
+
+function init() {
+  title.addEventListener("click", handleClick);
+}
+init();
+*/
+/*
+const title = document.querySelector("#title");
+
+const CLICKED_CLASS = "clicked";
+
+function handleClick() {
+  const hasClass = title.classList.contains(CLICKED_CLASS);
+  if (hasClass) {
+    title.classList.remove(CLICKED_CLASS);
+  } else {
+    title.classList.add(CLICKED_CLASS);
+  }
+}
+
+function init() {
+  title.addEventListener("click", handleClick);
+}
+init();
+*/
+const title = document.querySelector("#title");
+
+const CLICKED_CLASS = "clicked";
+
+function handleClick() {
+  title.classList.toggle(CLICKED_CLASS);
+}
+
+function init() {
+  title.addEventListener("click", handleClick);
+}
+init();
